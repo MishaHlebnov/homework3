@@ -1,6 +1,17 @@
 public class homework3 {
     public static void main(String[] args) {
-        exercise3();
+        exercise4();
+    }
+    public static void exercise4() {
+        int [][] a = new int[10][10];
+        for (int i =0;i < a.length; i++) {
+            for (int j =0;j< a.length;j++) {
+                a[i][j] =0;
+                if (a[i] == a[j]) {
+                    a[i][j] = 1;}
+                System.out.print(a[i][j] + " ");
+            }System.out.println(" ");
+        }
     }
     public static void exercise3() {
         int[] a = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
