@@ -3,16 +3,21 @@ public class homework3 {
         exercise4();
     }
     public static void exercise4() {
-        int [][] a = new int[10][10];
-        for (int i =0;i < a.length; i++) {
-            for (int j =0;j< a.length;j++) {
-                a[i][j] =0;
-                if (a[i] == a[j]) {
-                    a[i][j] = 1;}
+        int[][] a = new int[9][9];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
+                a[i][j] = 0;
+                if (i == j || 8 - i == j) {
+                    a[i][j] = 1;
+                }
                 System.out.print(a[i][j] + " ");
-            }System.out.println(" ");
+            }
+            System.out.println(" ");
         }
     }
+        //for (int j =0;j< a.length;j++)
+    //  if (a[i] == a[j]) {
+    //    a[i][j] = 1;}
     public static void exercise3() {
         int[] a = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
         for (int i =0;i < a.length; i++) {
